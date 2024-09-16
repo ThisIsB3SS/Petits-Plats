@@ -10,7 +10,9 @@ export const allRecipes = await api.get();
 // Initialize the tag array
 export const tagArray = [];
 // Call the showRecipes function at first load
-showRecipes(allRecipes);
+if(allRecipes.length > 0){
+  showRecipes(allRecipes);
+}
 
 // Add Event Listener to the main search
 const mainInput = document.getElementById("main-search-input");
