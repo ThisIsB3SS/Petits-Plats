@@ -17,7 +17,7 @@ export function addTagToArray(tag) {
 export function removeTagFromArray(tag) {
     const index = tagArray.indexOf(tag);
     if (index !== -1) {
-      let deletedTag = tagArray.splice(index, 1);
+    tagArray.splice(index, 1);
     } 
     
     // Update the search
